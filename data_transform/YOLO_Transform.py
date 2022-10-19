@@ -35,7 +35,7 @@ def dota2darknet(imgpath, txtpath, dstpath, extractclassname):
 
 if __name__ == '__main__':
     ## an example
-    dota2darknet('example_split/images',
-                 'example_split/labelTxt',
-                 'example_split/labels',
+    dota2darknet('./dataset/images/train2017',
+                 './dataset/labels/dota_train2017',
+                 './dataset/labels/train2017',
                  util.wordname_15)
